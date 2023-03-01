@@ -22,9 +22,9 @@ namespace FrotaApp.Infrastructure.Input.Repositories
             try
             {
                 using(_connection)
-            {
-                _connection.Execute(query.Query, query.Parameters);
-            }
+                {
+                    _connection.Execute(query.Query, query.Parameters);
+                }
             }
             catch
             {

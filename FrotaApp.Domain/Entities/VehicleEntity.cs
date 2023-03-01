@@ -21,7 +21,6 @@ namespace FrotaApp.Domain.Entities
             Type = type;
             _notifications = new List<Notification>();
             PriceCalculate();
-            IsValid();
         }
 
         public string Name { get; private set; }

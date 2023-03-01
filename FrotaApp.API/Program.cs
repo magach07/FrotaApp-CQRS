@@ -17,7 +17,7 @@ builder.Services.AddTransient<InsertVehicleReceiver>();
 
 var app = builder.Build();
 
-app.MapGet("/vehicle/GetAll", ([FromServices]IReadVehicleRepository repository)=>
+app.MapGet("/vehicle/GetAll/", ([FromServices]IReadVehicleRepository repository)=>
 {
     return repository.GetVehicles();
 });
